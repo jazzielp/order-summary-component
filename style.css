@@ -16,6 +16,7 @@
     --desaturated-blue : hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
     --white : #fff;
+    
 }
 
 html{
@@ -124,5 +125,21 @@ body{
 .btn--cancel-order{
     background: none;
     color: var(--desaturated-blue);
+}
+
+.card__link-change:hover{
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.btn--proceed-payment:hover{
+    cursor: pointer;
+    opacity: 70%;
+    
+}
+
+.btn--cancel-order:hover{
+    cursor: pointer;
+    color: var(--dark-blue);
 }
 
