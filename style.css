@@ -15,6 +15,7 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue : hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --white : #fff;
 }
 
 html{
@@ -32,7 +33,7 @@ body{
 
 .card{
     width: 320px;
-    background-color: var(--very-pale-blue);
+    background-color: var(--white);
     border-radius: 15px ;
     text-align: center;
 }
@@ -60,9 +61,49 @@ body{
 }
 
 .card__description{
-    padding: 26px;
+    padding: 26px 26px 0 26px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.6rem;
     color: var(--desaturated-blue);
+}
+
+.card__plan-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin: 20px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+}
+
+.card__icon-music{
+    margin-left: 20px;
+}
+
+.card__plan-description{
+    text-align: left;
+    width: 40%;
+}
+
+.card__plan-title{
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: var(--dark-blue);
+}
+
+.card__plan-cost{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.card__link-change{
+    margin-right: 20px ;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--bright-blue);
+
 }
